@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engagement Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="shortcut icon" href="./imgs/rings.png" type="image/png">
+</head>
+<body>
+
+<div class="nav-dots">
+  <div class="nd active" onclick="goTo(0)"></div>
+  <div class="nd" onclick="goTo(1)"></div>
+  <div class="nd" onclick="goTo(2)"></div>
+  <div class="nd" onclick="goTo(3)"></div>
+  <div class="nd" onclick="goTo(4)"></div>
+</div>
+
+<!-- S1: CURTAINS -->
+<section id="s1">
+  <div class="starbg" id="starbg"></div>
+  <div class="curtain-rod" id="rod"></div>
+  <div class="curtain-stage">
+    <div class="curtain left" id="cL">
+      <div class="cfold"></div><div class="cfold"></div><div class="cfold"></div><div class="cfold"></div>
+      <div class="tassel"><div class="tassel-k"></div><div class="tassel-t"><div class="tassel-s"></div><div class="tassel-s"></div><div class="tassel-s"></div></div></div>
+    </div>
+    <div class="curtain right" id="cR">
+      <div class="cfold"></div><div class="cfold"></div><div class="cfold"></div><div class="cfold"></div>
+      <div class="tassel"><div class="tassel-k"></div><div class="tassel-t"><div class="tassel-s"></div><div class="tassel-s"></div><div class="tassel-s"></div></div></div>
+    </div>
+  </div>
+  <div class="curtain-center-glow" id="cglow"></div>
+
+  <div class="open-btn" id="openBtn" onclick="openCurtains()">
+    <div class="obc">
+      <div class="obi">💍</div>
+      <div class="obt">Open the Curtain</div>
+    </div>
+    <div class="obh">✦ Click Here ✦</div>
+  </div>
+
+  <div class="s1c" id="s1c">
+    <div class="orn">❧ ✦ ✦ ✦ ❧</div>
+    <div class="s1-sub-title">You are warmly invited to our engagement celebration</div>
+    <div class="s1-names">
+      Mohamed Hassan
+      <span class="s1-amp">— 💍 —</span>
+      Sara Reda
+    </div>
+    <div class="gline"></div>
+    <div class="s1-blessed">Mashallah</div>
+    <button class="s1-cta" onclick="goTo(1)">Celebrate With Us ↓</button>
+  </div>
+</section>
+
+<!-- S2: SCRATCH BALLS -->
+<section id="s2">
+  <div class="s2-inner">
+    <div class="sec-badge">✦ Engagement Date ✦</div>
+    <h2 class="s2-title">Scratch the balls to reveal the date</h2>
+    <p class="s2-hint" id="s2hint">Swipe your finger on each ball to uncover the surprise 🎊</p>
+
+    <div class="balls-row">
+      <div class="sw">
+        <div class="sc-wrap" id="sw1">
+          <div class="sc-bg">
+            <div class="sb-val">Monday</div>
+            <div class="sb-lbl">Day</div>
+          </div>
+          <canvas class="sc" id="sc1" width="120" height="120"></canvas>
+        </div>
+        <div class="sw-lbl">Day</div>
+      </div>
+
+      <div class="sw">
+        <div class="sc-wrap" id="sw2">
+          <div class="sc-bg">
+            <div class="sb-val" style="font-size:22px">1 June<br><span style="font-size:15px;color:var(--gold)">2026</span></div>
+          </div>
+          <canvas class="sc" id="sc2" width="120" height="120"></canvas>
+        </div>
+        <div class="sw-lbl">Date</div>
+      </div>
+
+      <div class="sw">
+        <div class="sc-wrap" id="sw3">
+          <div class="sc-bg">
+            <div class="sb-val" style="font-size:26px">9:00</div>
+            <div class="sb-lbl">PM</div>
+          </div>
+          <canvas class="sc" id="sc3" width="120" height="120"></canvas>
+        </div>
+        <div class="sw-lbl">Time</div>
+      </div>
+    </div>
+
+    <div class="date-card" id="dateCard">
+      <div class="dc-bdg">🌹 Engagement Date 🌹</div>
+      <div class="dc-day">Monday</div>
+      <div class="dc-date">1 June 2026</div>
+      <div class="dc-time">⏰ At 9:00 PM</div>
+      <div class="dc-loc">📍 Boulevard Open Air Hall — Zagazig</div>
+    </div>
+
+    <div class="gdiv"><div class="gdiv-l"></div><div class="gdiv-g">❖</div><div class="gdiv-l"></div></div>
+  </div>
+</section>
+
+<!-- S3: PHOTO + COUNTDOWN -->
+<section id="s3">
+  <div class="s3-inner">
+    <div class="sec-badge" style="border-color:rgba(201,151,43,.4);background:rgba(201,151,43,.08);color:var(--gold2)">✦ The Couple ✦</div>
+
+    <div class="photo-frame">
+      <div class="pf-outer"></div>
+      <div class="pf-inner"></div>
+      <div class="pf-body">
+        <div class="pc tl">✦</div><div class="pc tr">✦</div>
+        <div class="pc bl">✦</div><div class="pc br">✦</div>
+
+        <img src="./imgs/img.jpeg" alt="The Couple" style="
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 14px;
+        display: block;
+      ">      </div>
+    </div>
+
+    <div class="couple-n">
+      <div class="cn-main">Mohamed Hassan<span class="cn-amp">💍</span>Sara Reda</div>
+      <div class="cn-hearts">✦ ✦ ✦</div>
+    </div>
+
+    <div class="countdown">
+      <div class="cd-lbl">⏳ Countdown to the Engagement</div>
+      <div class="cd-grid">
+        <div class="cd-unit"><div class="cd-num" id="cdD">00</div><div class="cd-nm">Days</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cdH">00</div><div class="cd-nm">Hours</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cdM">00</div><div class="cd-nm">Minutes</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-num" id="cdS">00</div><div class="cd-nm">Seconds</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S4: WISHES -->
+<section id="s4">
+    <div class="s4-inner">
+      <div class="sec-badge">✦ Send Your Wishes ✦</div>
+      <h2 class="s4-title">🌹 Share Your Happiness 🌹</h2>
+      <p class="s4-sub">Leave a beautiful message for the couple</p>
+  
+      <div class="wish-form" id="wishForm">
+        <div class="wf-row">
+          <label class="wf-lbl">Your Name</label>
+          <input class="wf-in" id="wName" type="text" placeholder="Enter your name...">
+        </div>
+  
+        <div class="wf-row">
+          <label class="wf-lbl">Your Message</label>
+          <textarea class="wf-ta" id="wMsg" placeholder="Write your kind words here..."></textarea>
+        </div>
+  
+        <button class="send-btn" onclick="sendWish()">
+          ✦ Send Wishes ✦
+        </button>
+      </div>
+  
+      <div class="thanks-box" id="thanksBox">
+        <div class="thanks-icon">🎊</div>
+        <div class="thanks-txt">
+          Thank you so much for your lovely wishes
+          <br>
+          <span style="color:var(--gold);font-size:13px">
+            Your message has been received 💝
+          </span>
+        </div>
+      </div>
+  
+      <div class="wishes-list" id="wishesList"></div>
+    </div>
+  </section>
+
+<!-- S5: CLOSING -->
+<section id="s5">
+  <div class="s5-inner">
+    <div class="s5-icon">🌸</div>
+    <div class="s5-title">Engagement Party</div>
+    <div class="gline" style="animation:none;width:220px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:0 auto"></div>
+    <div class="s5-names">
+      Mohamed<span class="s5-amp">— 💍 —</span>Sara
+    </div>
+    <div class="loc-card">
+      <div class="lc-row"><div class="lc-ico">📅</div><div class="lc-inf"><div class="lc-k">Date</div><div class="lc-v">Monday, 1 June 2026</div></div></div>
+      <div class="lc-row"><div class="lc-ico">⏰</div><div class="lc-inf"><div class="lc-k">Time</div><div class="lc-v">9:00 PM</div></div></div>
+      <div class="lc-row"><div class="lc-ico">📍</div><div class="lc-inf"><div class="lc-k">Venue</div><div class="lc-v">Boulevard Open Air Hall</div></div> </div>
+
+      
+    </div>
+    <a class="location" href="https://www.google.com/maps/dir/?api=1&destination=30.600798329201%2C31.485719822636&fbclid=IwY2xjawRq1-NleHRuA2FlbQIxMABicmlkETI3bW1DNUVrVTZPbHV0bThOc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHicV1oV8roDEmcHJgo_JJjJGJ2bJn8URn0IB0qP7DKG0KgvIJ7h3knTNVgp7_aem_Y3-MbeXVOxzk-IFeMSIPpQ" target="_blank">View Location on Map</a>
+
+    <p class="closing-txt">We would be delighted by your presence<br>Join us in celebrating this joyful occasion</p>
+    <div class="closing-gold">❧ ✦ ❧</div>
+  </div>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>
